@@ -1,0 +1,37 @@
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+.social-icons-item {
+  list-style: none;
+}
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-icons-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-cl);
+  transition-duration: var(--time);
+  transition-timing-function: var(--timing-function);
+}
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+  background-color: var(--accent-cl);
+  fill: var(--white);
+  transition-duration: var(--time);
+  transition-timing-function: var(--timing-function);
+}
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
