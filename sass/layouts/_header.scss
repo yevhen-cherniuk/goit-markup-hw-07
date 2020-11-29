@@ -8,14 +8,11 @@
 }
 
 .header-logo {
-  font-family: Raleway, sans-serif;
+  font-family: $logo-font, sans-serif;
   text-decoration: none;
   font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--black);
+  @include fonts(bold, 26px, 1.19, 0.03em);
+  color: $black;
 }
 .navigation {
   margin-left: 93px;
@@ -47,15 +44,12 @@
 .link {
   font-style: normal;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--black);
+  @include fonts(500, 14px, 1.14, 0.02em);
+  color: $black;
 }
 
 .current {
-  color: var(--accent-cl);
+  color: $accent-cl;
 }
 /* псевдоэлемент- подчеркушка меню */
 .current::after {
@@ -65,14 +59,14 @@
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-cl);
+  background-color: $accent-cl;
   bottom: 0;
 }
 .link:hover,
 .link:focus {
-  color: var(--accent-cl);
-  transition-duration: var(--time);
-  transition-timing-function: var(--timing-function);
+  color: $accent-cl;
+  transition-duration: $time;
+  transition-timing-function: $timing-function;
 }
 .link:hover::after,
 .link:focus::after {
@@ -82,20 +76,20 @@
   width: 100%;
   height: 4px;
   border-radius: 2px;
-  background-color: var(--accent-cl);
+  background-color: $accent-cl;
   bottom: 0;
-  transition-duration: var(--time);
-  transition-timing-function: var(--timing-function);
+  transition-duration: $time;
+  transition-timing-function: $timing-function;
 }
 .web-logo {
-  color: var(--accent-cl);
+  color: $accent-cl;
 }
 
 .header-conect {
   display: inline-block;
   flex-direction: row;
   justify-items: legacy;
-  color: var(--main-text-cl);
+  color: $main-text;
 }
 .conect-nav {
   margin-left: auto;
@@ -109,9 +103,9 @@
 }
 .header-conect:hover,
 .header-conect:focus {
-  color: var(--accent-cl);
-  transition-duration: var(--time);
-  transition-timing-function: var(--timing-function);
+  color: $accent-cl;
+  transition-duration: $time;
+  transition-timing-function: $timing-function;
 }
 .header-svg {
   margin-right: 10px;

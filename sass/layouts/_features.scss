@@ -17,7 +17,7 @@
   display: block;
   height: 120px;
   margin-bottom: 30px;
-  background-color: var(--creamy);
+  background-color: $creamy;
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 4px;
@@ -40,15 +40,15 @@
 }
 .title {
   min-height: 16px;
-  font-family: Roboto, sans-serif;
+  font-family: $main-font, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--black);
+  color: $black;
 }
 .text {
   min-height: 75px;
-  color: var(--main-text-cl);
+  color: $main-text;
 }

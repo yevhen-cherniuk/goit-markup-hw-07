@@ -30,24 +30,21 @@ img {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: $main-font, sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--main-text-cl);
+  color: $main-text;
 }
 ul {
   margin: 0px;
   padding: 0px;
 }
 .section-title {
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-family: $main-font, sans-serif;
+  @include fonts(700, 36px, 1.167, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--black);
+  color: $black;
   margin-bottom: 50px;
 }
 

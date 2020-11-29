@@ -14,21 +14,21 @@
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: var(--white);
+  background-color: $white;
   border-radius: 50%;
 }
 .social-icons-link:hover,
 .social-icons-link:focus {
-  background-color: var(--accent-cl);
-  transition-duration: var(--time);
-  transition-timing-function: var(--timing-function);
+  background-color: $accent-cl;
+  transition-duration: $time;
+  transition-timing-function: $timing-function;
 }
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
-  background-color: var(--accent-cl);
-  fill: var(--white);
-  transition-duration: var(--time);
-  transition-timing-function: var(--timing-function);
+  background-color: $accent-cl;
+  fill: $white;
+  transition-duration: $time;
+  transition-timing-function: $timing-function;
 }
 .social-icons-svg {
   width: 20px;

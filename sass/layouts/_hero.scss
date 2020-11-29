@@ -18,14 +18,14 @@
 }
 .hero-title {
   margin-bottom: 30px;
-  font-family: Roboto, sans-serif;
+  font-family: $main-font, sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white);
+  color: $white;
 }
 .btn {
   display: inline-block;
@@ -36,12 +36,12 @@
   min-height: 50px;
   text-align: center;
 
-  font-family: Roboto, sans-serif;
+  font-family: $main-font, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
   text-decoration: none;
-  color: var(--white);
-  background-color: var(--accent-cl);
+  color: $white;
+  background-color: $accent-cl;
 }

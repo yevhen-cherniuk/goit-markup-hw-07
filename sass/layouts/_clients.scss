@@ -20,15 +20,15 @@
 
 .client-link:hover,
 .client-link:focus {
-  border-color: var(--accent-cl);
-  transition-duration: var(--time);
-  transition-timing-function: var(--timing-function);
+  border-color: $accent-cl;
+  transition-duration: $time;
+  transition-timing-function: $timing-function;
 }
 .client-link:hover .icon,
 .client-link:focus .icon {
-  fill: var(--accent-cl);
-  transition-duration: var(--time);
-  transition-timing-function: var(--timing-function);
+  fill: $accent-cl;
+  transition-duration: $time;
+  transition-timing-function: $timing-function;
 }
 .icon {
   fill: #afb1b8;
