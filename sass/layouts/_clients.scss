@@ -16,19 +16,19 @@
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-}
 
-.client-link:hover,
-.client-link:focus {
-  border-color: $accent-cl;
-  transition-duration: $time;
-  transition-timing-function: $timing-function;
-}
-.client-link:hover .icon,
-.client-link:focus .icon {
-  fill: $accent-cl;
-  transition-duration: $time;
-  transition-timing-function: $timing-function;
+  &:hover,
+  &:focus {
+    border-color: $accent-cl;
+    transition-duration: $time;
+    transition-timing-function: $timing-function;
+  }
+  &:hover .icon,
+  &:focus .icon {
+    fill: $accent-cl;
+    transition-duration: $time;
+    transition-timing-function: $timing-function;
+  }
 }
 .icon {
   fill: #afb1b8;

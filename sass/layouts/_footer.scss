@@ -14,10 +14,7 @@
   display: inline-block;
   font-family: $main-font, sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include fonts(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -77,12 +74,13 @@
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-}
-.footer-social-icons-link:hover,
-.footer-social-icons-link:focus {
-  background-color: $accent-cl;
-  transition-duration: $time;
-  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-cl;
+    transition-duration: $time;
+    transition-timing-function: $timing-function;
+  }
 }
 .footer-social-icons-svg {
   width: 20px;

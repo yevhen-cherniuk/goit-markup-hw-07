@@ -1,26 +1,26 @@
 .features {
   padding-top: 94px;
 }
-
-.menu-features {
-  display: flex;
-  justify-content: space-between;
-}
 .list-item {
   list-style: none;
 }
-.menu-features .list-item {
-  width: calc((100% - 90px) / 4);
-}
-.menu-features .list-item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: $creamy;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
+.menu-features {
+  display: flex;
+  justify-content: space-between;
+
+  & .list-item {
+    width: calc((100% - 90px) / 4);
+  }
+  & .list-item::before {
+    content: '';
+    display: block;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $creamy;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+  }
 }
 .icon-antenna::before {
   background-image: url(../img/antenna.svg);

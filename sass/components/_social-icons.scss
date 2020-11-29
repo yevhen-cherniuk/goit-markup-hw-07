@@ -4,9 +4,10 @@
 }
 .social-icons-item {
   list-style: none;
-}
-.social-icons-item:not(:last-child) {
-  margin-right: 10px;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .social-icons-link {
   display: inline-flex;
@@ -16,19 +17,21 @@
   height: 44px;
   background-color: $white;
   border-radius: 50%;
-}
-.social-icons-link:hover,
-.social-icons-link:focus {
-  background-color: $accent-cl;
-  transition-duration: $time;
-  transition-timing-function: $timing-function;
-}
-.social-icons-link:hover .social-icons-svg,
-.social-icons-link:focus .social-icons-svg {
-  background-color: $accent-cl;
-  fill: $white;
-  transition-duration: $time;
-  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-cl;
+    transition-duration: $time;
+    transition-timing-function: $timing-function;
+  }
+
+  &:hover .social-icons-svg,
+  &:focus .social-icons-svg {
+    background-color: $accent-cl;
+    fill: $white;
+    transition-duration: $time;
+    transition-timing-function: $timing-function;
+  }
 }
 .social-icons-svg {
   width: 20px;
